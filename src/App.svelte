@@ -19,8 +19,10 @@
 </script>
 
 <h3>
-  <div># {rand + 1}</div>
-  <div>({count})</div>
+  <div>Таймер:</div>
+  <div>Задано:</div>
+  <div># {rand + 1} &nbsp; Повтор: {count}</div>
+  <div>Статистика.</div>
 </h3>
 
 <h1>{topic.name}</h1>
@@ -32,6 +34,7 @@
     display: flex;
     justify-content: center;
     gap: 5ch;
+    font-weight: normal;
   }
   h1 {
     font-weight: 600;
