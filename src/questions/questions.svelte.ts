@@ -1,4 +1,5 @@
 import { q001 } from "./q001";
+import { q002 } from "./q002";
 
 export type Question = {
   name: string
@@ -7,4 +8,7 @@ export type Question = {
   rang?: number
 }
 
-export const questions = $state([...q001])
+export const questions = $state([
+  // ...q001,
+  ...q002,
+])
