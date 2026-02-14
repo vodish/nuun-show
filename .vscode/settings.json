@@ -2,5 +2,8 @@
   "svelte.enable-ts-plugin": true,
   "files.associations": {
     "plyconfig.json": "jsonc"
-  }
+  },
+  "cSpell.words": [
+    "Нуун",
+  ]
 }
