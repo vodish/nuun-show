@@ -1,5 +1,6 @@
 <script lang="ts">
   import { questions } from "./questions/questions.svelte";
+  import Timer from "./Timer.svelte";
 
   let rand = $state(-1);
   let topic = $derived(questions[rand]);
@@ -19,10 +20,10 @@
 </script>
 
 <h3>
-  <div>Таймер:</div>
-  <div>Задано:</div>
+  <div><Timer /></div>
+  <!-- <div>Задано:</div> -->
   <div># {rand + 1} &nbsp; Повтор: {count}</div>
-  <div>Статистика.</div>
+  <!-- <div>Статистика.</div> -->
 </h3>
 
 <h1>{topic.name}</h1>
@@ -33,6 +34,7 @@
   h3 {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     gap: 5ch;
     font-weight: normal;
   }
